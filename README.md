@@ -1,4 +1,4 @@
-# AppWorks Example - Auth
+# AppWorks Example - AWLauncher
 
 ## Contents
 1. [About appworks.js](#about-appworksjs)

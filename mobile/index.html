@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Launcher Demo</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="appworks.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+
+    <div id="intro-wrapper">
+      <div id="intro">
+        <div style="font-weight:bold; text-align:center; margin-bottom:8px;">AppWorks Launcher Demo</div>
+        <p>You have two buttons below which interact with the AWLauncher plugin</P>
+        <p><b>&quot;Get Opening URL&quot;</b> will retrieve the URL used to open the client</p>
+        <p><b>&quot;Clear Opening URL&quot;</b> will clear the URL used to open the client.</p>
+        <p>You may wish to clear the opening URL so that your app doesn't process it multiple times.</p>
+        <p>An example URL to open the client may be: <b>x-otm://launchUrl=http%3A%2F%2Fmyapp.mydomain.com%2Fmyservice%2Fdata%2F123</b></p>
+      </div>
+    </div>
+
+    <div id="content-wrapper">
+      <div><button type="button" id="go0-button" class="go-button vertical-space" onclick="getOpeningURL();">Get Opening URL</button></div>
+      <div><button type="button" id="go1-button" class="go-button vertical-space" onclick="clearOpeningURL();">Clear Opening URL</button></div>
+    </div>
+
+    <div id="result-wrapper">
+      <div id="result">
+        Opening URL will appear here
+    </div>
+
+    <div id="version">Version 0.0.2</div>
+  </body>
+</html>
